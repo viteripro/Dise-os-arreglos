@@ -1,0 +1,451 @@
+:root{
+	--tamaño-parrafo: 1.3em;
+}
+
+*{
+	margin: 0;
+	 box-sizing: border-box;
+}
+
+body{
+	background-color: #333;
+}
+/***************HEADER******************/
+.header{
+	width: 100%;
+	height: 15em;
+ 	animation-name: header;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+}
+
+.h1{
+	background-color: lightgreen;
+}
+
+.h2{
+	width: 100%;
+	font-size: 3em;
+	text-align: center;
+	background-color: rebeccapurple;
+	min-width: 6.5em;
+}
+
+@keyframes header{
+	0%{
+		background-image: url(img/bateria.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 99%;
+	}
+
+	50%{
+		background-image: url(img/avion.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 99%;
+
+	}
+
+	100%{
+		background-image: url(img/bateria.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 99%;
+
+	}
+}
+
+.nav{
+	background-color: forestgreen;
+	text-align: left;
+}
+
+.ul{
+	background-color: blue;
+	  padding: 0;
+}
+
+.li{
+	display: inline-block;
+	border-right: 2px solid black;
+	padding: 5px;
+}
+
+.li:hover{
+	background-color: rgba(91, 213, 200, 1.0);
+}
+
+.link{
+	color: black;
+	text-decoration: none;
+}
+
+/********************MAIN*******************/
+.article-1{
+	width: 50%;
+	padding: 2em 0 2em 0;
+	margin-left: auto;
+	margin-right: auto;
+ }
+
+
+.text-2,.text-3,
+.text-4,.text-5{
+  width: 27em;
+  background-color: #af6225;
+  display: inline-block;
+  padding: 0.5em;
+  font-size: var(--tamaño-parrafo);
+  border: 5px solid darkgrey;
+  margin-left: 3em;
+}
+
+
+.text-6{
+	 text-align: center;
+	background-color: darksalmon;
+	padding: 5px;
+	font-size: 2em;
+}
+
+
+.text-1{
+	font-size: 2em;
+}
+
+.article-2{/*
+	background-color: #578d53;*/
+	background-image: linear-gradient(rgba(8, 172, 155,1),rgb(1, 103, 147));
+	 padding-bottom: 13em;
+} 
+ 
+.subtitle-2-camisa,
+.subtitle-3-vaso,
+.subtitle-4-gorra,
+.subtitle-5-roca{
+	width: 60%;
+	display: block;
+	font-size: 2.5em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 9em;
+}
+
+
+.fotos__camisa{
+	  animation-name: fotos__camisa;
+	  animation-duration: 6s;
+	  animation-iteration-count: infinite;
+	  min-width: 5em;
+}
+
+.text-2{
+ 	font-size: var(--tamaño-parrafo);
+}
+
+.subtitle-2,.subtitle-3,
+.subtitle-4,.subtitle-5{
+	font-size: 2.8em;
+	padding-bottom: 2em;
+	padding-top: 0.5em;
+}
+
+.container_img-camisa,
+.container_img-vaso,
+.container_img-gorra,
+.container_img-roca{
+	width: 40%;  
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+  }
+
+ 
+@keyframes fotos__camisa{
+	0%{
+		background-image: url(img/cielo1.jpg);
+		background-size: 100% 98%;
+	}
+
+	50%{
+		background-image: url(img/cielo.jpg);
+		background-size: 100% 98%;
+
+	}
+
+	100%{
+		background-image: url(img/cielo1.jpg);
+		background-size: 100% 98%;
+
+	}
+}
+
+
+.fotos__vasos{
+		animation-name: fotos__vasos;
+	  animation-duration: 6s;
+	  animation-iteration-count: infinite;
+ }
+
+@keyframes fotos__vasos{
+	0%{
+		background-image: url(img/cielo1.jpg);
+		background-size: 100% 98%;
+	}
+
+	50%{
+		background-image: url(img/cielo.jpg);
+		background-size: 100% 98%;
+
+	}
+
+	100%{
+		background-image: url(img/cielo1.jpg);
+		background-size: 100% 98%;
+
+	}
+}
+
+
+.article-3,.article-4,
+.article-5{
+ padding-bottom: 13em;
+}
+
+.article-3{
+	/*background-color: #7b59c4;
+	*/background-image: linear-gradient(#7b59c4,#3B0798);
+  }
+
+
+.article-4{/*
+	background-color: #1e99;*/
+	background-image: linear-gradient(#1e99,#028711);
+ }
+
+.article-5{/*
+	background-color: #1e39;*/
+	background-image: linear-gradient(#1e39,#618702);
+ }
+
+.fotos__camisa,
+.fotos__vasos,
+.fotos__gorras,
+.fotos__rocas{
+ width: 25em;
+ height: 15em;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+ border: 8px solid sienna;
+}
+
+.fotos__gorras{
+	animation-name: fotos__gorras;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fotos__gorras{
+	0%{
+		background-image: url(img/cielo1.jpg);
+		background-size: 100% 98%;
+	}
+
+	50%{
+		background-image: url(img/cielo.jpg);
+		background-size: 100% 98%;
+
+	}
+
+	100%{
+		background-image: url(img/cielo1.jpg);
+		background-size: 100% 98%;
+
+	}
+}
+
+.fotos__rocas{
+	animation-name: fotos__rocas;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fotos__rocas{
+	0%{
+		background-image: url(img/cielo1.jpg);
+		background-size: 100% 98%;
+	}
+
+	50%{
+		background-image: url(img/cielo.jpg);
+		background-size: 100% 98%;
+
+	}
+
+	100%{
+		background-image: url(img/cielo1.jpg);
+		background-size: 100% 98%;
+
+	}
+}
+
+
+@media screen and (max-width: 950px){
+
+.article-1{
+	width: 51%;
+	padding: 2em 0 2em 0;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+.text-2,.text-3,
+.text-4,.text-5{
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.subtitle-2-camisa,
+.subtitle-3-vaso,
+.subtitle-4-gorra,
+.subtitle-5-roca{
+	width: 30%;
+	font-size: 2.5em;
+} 
+
+.container__flex{
+ 	width: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.container_img-camisa,
+.container_img-vaso,
+.container_img-gorra,
+.container_img-roca{
+	width: 100%;
+	margin-top: 5em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fotos__camisa,
+.fotos__vasos,
+.fotos__gorras,
+.fotos__roca{
+  width: 25em;
+  height: 15em;
+}
+
+.fotos__camisa{
+	  animation-name: fotos__camisa;
+	  animation-duration: 6s;
+	  animation-iteration-count: infinite;
+ }
+
+.fotos__vasos{
+	  animation-name: fotos__vasos;
+	  animation-duration: 6s;
+	  animation-iteration-count: infinite;
+}
+
+.fotos__gorras{
+	  animation-name: fotos__vasos;
+	  animation-duration: 6s;
+	  animation-iteration-count: infinite;
+  }
+}
+
+@media screen and (max-width: 400px){
+	.header{
+		min-width: 75em;
+	}
+
+	.li{
+		font-size: 2.2em;
+	}
+
+	.h2{
+		min-width: 25em;
+	}
+
+
+
+	.subtitle-2,.subtitle-3,
+	.subtitle-4,.subtitile-5{
+		font-size: 3.8em;
+	}
+
+	 .article-1{
+ 		min-width: 55.5em;
+		margin-left: 9em;    
+	}
+
+	.article-2{
+		 display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		min-width: 75em;
+		font-size: 1.0em;
+	}
+
+	.article-3{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		min-width: 75em;
+		font-size: 1.0em;
+	}
+
+	.article-4{
+		 display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		min-width: 75em;
+		font-size: 1.0em;
+	}
+
+	.article-5{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		min-width: 75em;
+	}
+
+  .text-2,.text-3,
+  .text-4,.text-5{
+	width: 88%;
+	font-size: 2.5em;
+	margin-left: 1em;
+	margin-top: 2em;
+	}
+
+	.text-1{
+	margin-left: 0.2em;
+		font-size: 3em;  
+	 }
+
+	.text-2{
+		min-width: 5em;
+	}	
+ 
+	.fotos__vasos,
+	.fotos__camisa,
+	.fotos__gorras,
+	.fotos__rocas{
+		width: 34em;
+		height: 20em;
+		 margin-top: 2em;
+		 margin-left: auto;
+		 margin-right: auto;
+	  }
+
+	.text-6{
+		width: 100%;
+		min-width: 37em;
+		display: inline-block;
+	}  
+}
