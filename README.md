@@ -1,5 +1,7 @@
 ## Descripción
 En esta página se puede ver una pagina encargada de vender articlos de diseños es camisas vasos y otras cosas
+y me he encargado de agregarle media querys para que esta pagina sea resposive y se pueda ver correctamente en
+distintos dispositivos
  
 ## Autor
 **Luis Viteri**
