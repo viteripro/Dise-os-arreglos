@@ -80,15 +80,14 @@ body{
 
 /********************MAIN*******************/
 .article-1{
-	width: 50%;
+	width: 100%;
+	background-image: linear-gradient(to left,pink,darkcyan,lightgreen);
 	padding: 2em 0 2em 0;
-	margin-left: auto;
-	margin-right: auto;
+	 
  }
 
 
-.text-2,.text-3,
-.text-4,.text-5{
+.text-2{
   width: 27em;
   background-color: #af6225;
   display: inline-block;
@@ -106,9 +105,13 @@ body{
 	font-size: 2em;
 }
 
+h3{
+ text-align: center;
+}
 
 .text-1{
 	font-size: 2em;
+	text-align: center;
 }
 
 .article-2{/*
@@ -182,8 +185,8 @@ body{
 
 .fotos__vasos{
 		animation-name: fotos__vasos;
-	  animation-duration: 6s;
-	  animation-iteration-count: infinite;
+	        animation-duration: 6s;
+	        animation-iteration-count: infinite;
  }
 
 @keyframes fotos__vasos{
@@ -205,27 +208,8 @@ body{
 	}
 }
 
-
-.article-3,.article-4,
-.article-5{
- padding-bottom: 13em;
-}
-
-.article-3{
-	/*background-color: #7b59c4;
-	*/background-image: linear-gradient(#7b59c4,#3B0798);
-  }
-
-
-.article-4{/*
-	background-color: #1e99;*/
-	background-image: linear-gradient(#1e99,#028711);
- }
-
-.article-5{/*
-	background-color: #1e39;*/
-	background-image: linear-gradient(#1e39,#618702);
- }
+ 
+ 
 
 .fotos__camisa,
 .fotos__vasos,
@@ -293,14 +277,13 @@ body{
 @media screen and (max-width: 950px){
 
 .article-1{
-	width: 51%;
+	width: 100%;
 	padding: 2em 0 2em 0;
 	margin-left: auto;
 	margin-right: auto;
   }
 
-.text-2,.text-3,
-.text-4,.text-5{
+.text-2{
 	width: 70%;
 	display: block;
 	margin-left: auto;
@@ -314,13 +297,7 @@ body{
 	width: 30%;
 	font-size: 2.5em;
 } 
-
-.container__flex{
- 	width: 100%;
-	display: flex;
-	flex-direction: column-reverse;
-}
-
+ 
 .container_img-camisa,
 .container_img-vaso,
 .container_img-gorra,
@@ -361,22 +338,15 @@ body{
 
 @media screen and (max-width: 400px){
 	.header{
-		min-width: 75em;
+		width: 100%;
 	}
 
 	.li{
-		font-size: 2.2em;
+		font-size: 1.2em;
 	}
 
 	.h2{
-		min-width: 25em;
-	}
-
-
-
-	.subtitle-2,.subtitle-3,
-	.subtitle-4,.subtitile-5{
-		font-size: 3.8em;
+           width: 100%;
 	}
 
 	 .article-1{
@@ -391,32 +361,10 @@ body{
 		min-width: 75em;
 		font-size: 1.0em;
 	}
+ 
+	 
 
-	.article-3{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		min-width: 75em;
-		font-size: 1.0em;
-	}
-
-	.article-4{
-		 display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		min-width: 75em;
-		font-size: 1.0em;
-	}
-
-	.article-5{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		min-width: 75em;
-	}
-
-  .text-2,.text-3,
-  .text-4,.text-5{
+  .text-2{
 	width: 88%;
 	font-size: 2.5em;
 	margin-left: 1em;
@@ -445,7 +393,6 @@ body{
 
 	.text-6{
 		width: 100%;
-		min-width: 37em;
-		display: inline-block;
+ 		display: inline-block;
 	}  
 }
